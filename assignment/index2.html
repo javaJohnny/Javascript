@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<button onclick="myFunction()">Click me!</button>
+
+<p id="demo"> </p>
+
+
+<script>
+
+var loc =[
+    {
+    name: 'Buffalo Wild Wings',
+    location: 'Rundle',
+    latitude: 51.0908037,
+    longitude: -114.064969
+    },
+    {
+    name: 'Boston Pizza',
+    location: 'NE',
+    latitude: 51.0906363,
+    longitude: -114.0649694
+    },
+    {
+    name: 'AppleBees',
+    location: 'NE',
+    latitude: 51.0906433,
+    longitude: -114.0358694
+    }
+]
+
+function getsort(item){
+    var x = [item.latitude,item.longitude].join(" ");
+    return x;
+}
+
+function myFunction(){
+    document.getElementById('demo').innerHTML = loc.map(getsort);
+}
+    //use array_map to convert the restaurant array, into a new array of just latitude and longitude.
+</script>
+</body>
+</html>

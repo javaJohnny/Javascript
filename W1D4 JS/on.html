@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <button> click me</button>
+
+
+
+    <p id="demo" class="hide"> You a Hoe</p>
+        <p id="demo" class="hide"> You a Hoe</p>
+            <p id="demo" class="hide"> You a Hoe</p>
+                <p id="demo" class="hide"> You a Hoe</p>
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function(){
+            $('p').on({
+                mouseenter: function(){
+                    $(this).css("background-color", "red");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "gold");
+                },
+                click: function(){
+                    $(this).css("background-color", "green");
+                }
+
+            });
+
+            $('body').on({
+                mouseleave: function(){
+                    $(this).css("background-color", "black");
+                },
+                mouseenter: function(){
+                    $(this).css("background-color", "white");
+                },
+
+            });
+        });
+
+                                // the .on event lets you have more than one method 
+
+
+
+    </script>
+</body>
+</html>

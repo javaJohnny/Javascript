@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <button> click me</button>
+
+
+
+    <p id="demo" class="hide"> You a Hoe</p>
+        <p id="demo" class="hide"> You a Hoe</p>
+            <p id="demo" class="hide"> You a Hoe</p>
+                <p id="demo" class="hide"> You a Hoe</p>
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function(){
+            $('p').hover(function(){  // .hover is combination of mouseenter() & mouseleave()... that's why there is 2 functions
+                $(this).hide();
+            },
+            function(){
+                alert('WHERE\'d I GO');
+            });
+
+        });
+
+
+    </script>
+</body>
+</html>

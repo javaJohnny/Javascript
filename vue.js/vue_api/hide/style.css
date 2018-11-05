@@ -1,0 +1,63 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display:block;
+    padding:1em;
+    background: #eee;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+input{
+    caret-color: blue;
+    padding: 0.5em;
+    width:100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+}
+
+.showCard {
+    display: none;
+
+}
+
+.show {
+    display: block !important;
+}
+
+.showCard .result {
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 5px black;
+    overflow-y: scroll;
+    height: 200px;
+}
+
+.result a {
+    margin: 0.5em;
+}
+
+.result a img {
+    width: 25%;
+    border-radius: 20px;
+    padding:0;
+    margin:0;
+    box-shadow: -1px 2px 5px black;
+}
+
+.selected {
+    padding: 3em;
+    display: block;
+    text-align: center;
+}
+
+.selected img {
+    width: 100%;
+    box-shadow: -1px 2px 5px black;
+}

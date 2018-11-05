@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="head">
+    <h1>ROCK, PAPER, SCISSORS</h1>
+</div>
+<div id="main">
+    <div id="app">
+        <div class="dialogue">
+            <h2 for="">What do you pick?</h2>
+                <button @click="choose(0)"><img src="rock.png" alt=""></button>
+                <button @click="choose(1)"><img src="hand.png" alt=""></button>
+                <button @click="choose(2)"><img src="scissors.png" alt=""></button>
+        </div>
+        <hr>
+
+        <result :user-Data="userScore" :draw-Data="draw" :outcome-Data="outcome" :cpu-Data="cpuScore" :msg-Data="msg"></result>
+
+
+
+
+    </div>
+</div>
+<div id="foot">
+    <p>Copyright &copy; JJM 2018</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

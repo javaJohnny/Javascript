@@ -1,0 +1,35 @@
+*    {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body    {
+    background: #eee;
+    padding:1em;
+}
+
+#windowtitle {
+    display: block;
+    border-bottom: 1px inset black;
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+}
+
+#app    {
+    padding: 1em;
+    background: inherit;
+}
+
+div     {
+    margin-top: 2em;
+}
+
+.bubble    {
+    padding: 1em;
+    background: white;
+    border-radius: 5px;
+    margin: 1em 0;
+    box-shadow: 0px 0px 5px black;
+}

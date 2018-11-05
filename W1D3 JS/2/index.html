@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button onclick="myFunction()">click me 4 median</button>
+
+    <p id="demo"> </p>
+
+    <script>
+
+        var numbers = [
+            5, 20, 30, 40
+        ];
+        var middle = number.length / 2;
+
+        function myFunction(){
+            var x = numbers.splice(1);
+            var y = numbers.splice(2);
+            var average = x + y / 2;
+            document.getElementById('demo').innerHTML = average;
+
+        }
+
+        document.write(numbers);
+
+
+
+
+
+    </script>
+</body>
+</html>

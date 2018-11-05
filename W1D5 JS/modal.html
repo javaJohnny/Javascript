@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div id="dialog" title="EXAMPLE">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Cumque quaerat aperiam consequuntur quis necessitatibus
+              tempore animi, provident, alias amet ducimus.
+        </p>
+
+    </div>
+
+    <button id="opener">Open Modal</button>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+
+        $(function(){
+            $('#dialog').dialog({
+                autoOpen: false,
+                show: {
+                    effect: 'blind',
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+            $('#opener').on('click', function(){
+                $('#dialog').dialog('open');
+            });
+        });
+
+
+    </script>
+    <!-- <script>
+
+    $( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+
+    $( "#opener" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  } );
+
+
+    </script> -->
+
+</body>
+
+</html>

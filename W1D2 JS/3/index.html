@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1 id="text">HELLO WORLD</h1>
+
+    <form name="myForm" action="/">
+    <label>Choose a Color:</label>
+    <select name="background" id="background"
+    onchange="changeBackgroundBody(this)">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+    </select>
+
+    <select name="myColor" id="myColor"
+    onchange="changeBackgroundColor(this)">
+            <option value="white">White</option>
+            <option value="yellow">Yellow</option>
+            <option value="orange">Orange</option>
+    </select>
+    </form>
+
+    <script>
+        alert('HELLO WORLD');
+        function changeBackgroundBody(x){
+            console.log(x.value);
+            var body = document.getElementById('body');
+            body.style.backgroundColor = x.value;
+
+        }
+        function changeBackgroundColor(x){
+            console.log(x.value);
+            var text = document.getElementById('text');
+            text.style.color = x.value;
+
+        }
+
+    </script>
+</body>
+</html>

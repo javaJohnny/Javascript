@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 800px 1fr 80px;
+    grid-template-areas:
+    ". banner ."
+    ". main ."
+    ". foot .";
+}
+
+.banner{
+    grid-area:banner;
+    background: #eee;
+    background-image: url('buildings.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+    display: grid;
+    grid-area:main;
+    grid-template-rows: 1000px 1000px 1000px;
+
+}
+
+.foot{
+    grid-area: foot;
+    background: black;
+}
+
+.panel{
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+.yellow{
+    background: yellow;
+}
+.blue{
+    background: blue;
+}
+.red{
+    background: red;
+}

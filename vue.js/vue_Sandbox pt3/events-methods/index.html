@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Data Binding 2</title>
+</head>
+
+<body>
+    <h1 id="windowtitle">Data Binding 2</h1>
+
+    <div id="app">
+        <h1>Favorite Colors:</h1>
+        <ul>
+            <div class="bubble" v-for="color in favoriteColors">
+                <p>
+                    One of my favorite color is <strong>{{ color }}</strong>
+                 </p>
+            </div>
+        </ul>
+        <hr>
+        <input type="text" v-model="newColor">
+        <button type="submit" @click="addColor">Add {{ newColor }}</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

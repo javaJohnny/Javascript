@@ -1,0 +1,28 @@
+/* GLOBAL */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.grid{
+    grid-template-columns: 20px 1fr 20px;
+    grid-row: 50px 1fr 20px;
+    grid-template-areas:
+    ;
+}
+
+/* HEADER */
+.header{
+    grid-area: 'header';
+}
+
+/* MAIN */
+.main{
+    grid-area: 'main';
+}
+
+/* FOOTER */
+.footer{
+    grid-area: 'footer';
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <style>
+
+        .ui-progressbar  {
+            position: relative;
+        }
+
+        .progress-label {
+            position: absolute;
+            left: 50%;
+            top: 4px;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+        }
+
+        #progressbar .ui-progressbar-value {
+            background: rgb(48, 204, 33);
+        }
+
+        #progressbar {
+            background: #eee;
+            border: 2px inset black;
+            box-shadow: -2px 3px 5px black;
+
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+
+
+    <div id="progressbar">
+        <div class="progress-label">Loading...</div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+
+    <script>
+
+        $(function(){
+            var progressbar = $('#progressbar'),
+                progressLabel = $('.progress-label');
+
+                progressbar.progressbar({
+                    value: true,
+                    change: function(){
+                        progressLabel.text(progressbar.progressbar('value') + "%");
+                    },
+                    complete: function() {
+                        progressLabel.text("You Retard.");
+                    }
+                });
+                function progress(){
+                    var val = progressbar.progressbar('value') || 0;
+                    progressbar.progressbar("value", val + 1);
+                    if (val < 99){
+                        setTimeout(progress, 100);
+                    }
+                }
+                setTimeout(progress, 40);
+        });
+    </script>
+
+    <!-- <script>
+        $(function() {
+            var progressbar = $("#progressbar"),
+                progressLabel = $(".progress-label");
+
+            progressbar.progressbar({
+                value: true,
+                change: function() {
+                    progressLabel.text(progressbar.progressbar("value") + "%");
+                },
+                complete: function() {
+                        progressLabel.text("Complete!");
+                }
+            });
+
+            function progress() {
+                var val = progressbar.progressbar("value") || 0;
+
+                progressbar.progressbar("value", val + 1);
+
+                if (val < 99) {
+                    setTimeout(progress, 5);
+                }
+            }
+
+            setTimeout(progress, 2000);
+        });
+     </script> -->
+
+</body>
+
+</html>

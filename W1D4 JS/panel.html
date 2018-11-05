@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .panel{
+            display: none;
+            width:100%;
+            box-shadow: -2px 2px 5px black;
+            border-radius: 10px;
+            text-align: center;
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <button> Slide Down</button>
+    <div class="panel">
+        <h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ducimus! </h1>
+
+    </div>
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+
+    // $(document).ready(function(){
+    //     $('button').click(function(){
+    //         $('.panel').slideDown("slow");
+    //     }),
+    //     $('button').dblclick(function(){
+    //         $('.panel').slideUp('slow');
+    //     });
+    // });
+
+    $(document).ready(function(){
+        $('button').on({
+            click: function(){
+                $('.panel').slideDown('slow');
+            },
+            dblclick: function(){
+                $('.panel').slideUp('fast');
+            }
+        });
+    });
+
+    $(document).ready(function(){
+        $('button').on({
+            click: function(){
+                $('.panel').toggle('slow');
+            },
+
+        });
+    });
+
+
+    </script>
+</body>
+</html>

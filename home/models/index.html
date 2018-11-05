@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <p id="demo"> </p>
+
+
+
+    <script>
+
+
+        var Players = [
+            {name: 'Michael Jordan', height: '6ft6"', position:'SG'},
+            {name: 'Kobe Bryant', height: '6ft6"', position:'SG'},
+            {name: 'LeBron James', height: '6ft8"', position:'SF'},
+            {name: 'Kevin Durant', height: '7ft', position:'SF'},
+            {name: 'Stephen Curry', height: '6ft3"', position: 'PG'},
+            {name: 'Derrick Rose', height: '6ft3"', position: 'PG'}
+        ];
+        document.getElementById("demo").innerHTML = Players;
+
+
+        function myFunction(){}
+
+        Players.push({name: 'Damian Lillard'});
+
+        console.log(Players);
+
+    </script>
+</body>
+</html>

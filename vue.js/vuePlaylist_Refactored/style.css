@@ -1,0 +1,110 @@
+* {
+    maring: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.head {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    display: block;
+    background: black;
+    border-bottom: 5px solid rgb(6, 156, 21);
+}
+
+.head h1 {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.main {
+    border-radius: 10px;
+    margin: 2em;
+    padding: 5px 2em;
+    background: #eee;
+}
+
+.main h1 {
+    border-bottom: 2px solid black;
+    padding: 1em;
+}
+
+ul {
+    text-align: center;
+    display: block;
+    list-style: none;
+}
+
+li {
+    text-align: justify;
+}
+
+li p {
+    float: right;
+}
+
+.bubble {
+    display: inline-block;
+    padding: 1em;
+}
+
+.bubble img {
+    margin: 0.9em auto;
+    display: inline-block;
+    width: 40px;
+    float: left;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px black;
+}
+
+.wrapper {
+    padding: 1em;
+    text-align: center;
+}
+.input input {
+    width:15%;
+    border-radius: 5px;
+    border:none;
+    padding: 0.5em;
+    box-shadow: 0 0 2px black;
+}
+
+.button {
+    display: block;
+}
+
+.button .btn {
+    border:1px solid black;
+    background: none;
+    border-radius: 10px;
+    padding: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    transition: all 0.5s;
+    background: rgb(6, 156, 21);
+    font-weight:bolder;
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background:red;
+}
+
+li:hover {
+    cursor: pointer;
+}
+.favorite {
+    background: rgb(6, 156, 21);
+    border-radius: 20px;
+}

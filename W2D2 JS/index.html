@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>JS</title>
+</head>
+<body onload="myMsg()">
+
+    <div class="grid">
+        <div class="head">
+            W2D2 JavaScript
+        </div>
+        <div class="main">
+            <div class="container">
+                <p>mouse click on a href interrupt default Action</p>
+                <a href="https://www.google.ca/" onclick="myFunction()">Click me For Google</a>
+            </div>
+
+
+            <div class="container">
+                    <p>Mouse Event Prototypes</p>
+                <div class="box" id="box1">
+                    Hover Me
+                </div>
+                <div class="box box2" onclick="clickFunction(this)">
+                    Click Me
+                </div>
+                <div class="box" id="box3">
+                    Click Me
+                </div>
+            </div>
+            <div class="container">
+                <p> key events Prototypes </p>
+                <input type="text" id="input" placeholder="type something">
+            </div>
+
+            <div class="container" id="loc">
+                <p> Add Node with event listner </p>
+                <button onclick="addNode()">click me</button>
+
+            </div>
+            <div class="container" id="boxLoc">
+                <p> Add Box</p>
+                <button id="addBtn">Add Box</button>
+            </div>
+        </div>
+        <div class="foot">
+            Copyright &copy; JJM 2018
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

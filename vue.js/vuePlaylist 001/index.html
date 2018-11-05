@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Vue Playlist</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Vue Playlist</h1>
+    </div>
+    <div class="main" id="playlist">
+        <h1>Playlist</h1>
+        <ul>
+            <div class="bubble" v-for="song in music">
+                <li>
+                    <img src="icon.png" alt="icon">
+                    <p><strong>Name: </strong> {{ song.name }}
+                        <br />
+                        <strong>Artist: </strong>{{ song.artist }}
+                    </p>
+                </li>
+            </div>
+        </ul>
+        <hr>
+        <div class="wrapper">
+            <h2>New Song: </h2>
+            <div class="input">
+                <input type="text" placeholder="Add Song" v-model="newMusic.name">
+                <input type="text" placeholder="Add Artist" v-model="newMusic.artist">
+            </div>
+            <br />
+            <div class="button">
+                <button type="submit" @click="addMusic">Add</button>
+                <button type='button' @click="deleteMusic" class="delete">Delete</button>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <p>Copyright &copy; JJM 2018</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

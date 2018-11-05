@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 50px 1fr 40px;
+    grid-template-areas:
+    ". head ."
+    ". main ."
+    ". foot .";
+}
+
+.head{
+    grid-area:head;
+    background: black;
+    color:white;
+    text-shadow: 0 0 3px #eee;
+    font-size: 2em;
+    text-align: center;
+}
+
+.main{
+    grid-area:main;
+    background: #eee;
+
+}
+
+.foot{
+    grid-area:foot;
+    background: black;
+    color:white;
+    text-align: right;
+    padding: 0.5em;
+}
+
+.container{
+    display: block;
+    padding: 1em;
+    margin:2em;
+}
+.box{
+    width:150px;
+    height:150px;
+    display: inline-block;
+    background: green;
+    border: 1px solid black;
+    margin: 0.5em;
+
+}
+
+.box:nth-child(odd){
+    background: white;
+}
+
+input{
+    width:100%;
+}

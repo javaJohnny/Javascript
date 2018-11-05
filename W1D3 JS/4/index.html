@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button onclick="myFunction()">CLICK</button>
+    <p id="demo"> </p>
+    <p id="demo1"> </p>
+
+    <button onclick="myFunction1()">CLICK ME
+    </button>
+    <p id="demo2"> </p>
+    <script>
+
+        var colors = [
+            'Red', 'Blue', 'Green', 'Yellow','Brown'
+
+        ];
+
+
+        colors[3] = 'Pink'; // Replaces Yellow
+        var shirts = ['V-neck', 'Crew Neck', 'Hoodie'];
+
+        document.getElementById('demo').innerHTML = colors;
+
+        function myFunction(){
+        var clothes = shirts + ', ' + colors;// either or theyre both the same
+        var clothes1 = shirts.concat(colors);//<-----------^
+
+            document.getElementById('demo1').innerHTML = clothes;
+        }
+
+        var str = 'Hello World';
+        document.getElementById('demo2').innerHTML = str;
+        function myFunction1(){
+            var res = str.toUpperCase();
+                document.getElementById('demo2').innerHTML = res;
+        }
+
+        document.write('length:' + shirts.length); // length tells how many characters/ items in an array.
+
+    </script>
+</body>
+</html>
